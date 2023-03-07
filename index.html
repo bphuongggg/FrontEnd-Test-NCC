@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>FE Test</title>
+  </head>
+  <body>
+    <!-- Side Bar -->
+    <nav id="sidebar">
+      <div class="sideNav-pc">
+        <a href="#" class="home-active">Home</a>
+        <a href="#service">Services</a>
+        <a href="#new">News</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contacts</a>
+      </div>
+    </nav>
+    <label for="nav-mobile-input" class="sideNav-mobile">
+      <i class="fa fa-bars"></i>
+    </label>
+    <input type="checkbox" hidden class="nav-input" id="nav-mobile-input" />
+    <label
+      for="nav-mobile-input"
+      class="nav-overlay"
+      id="my-nav-overlay"
+    ></label>
+    <!-- nav responsive mobile -->
+    <nav class="nav-mobile" id="my-nav-mobile">
+      <label for="nav-mobile-input" class="closeNavMobile">
+        <p><b>Close Menu</b></p>
+      </label>
+
+      <div class="nav-mobile-list">
+        <a href="#" onclick="hidden_nav_mobile()">Home</a>
+
+        <a href="#service" onclick="hidden_nav_mobile()"> Services </a>
+        <a href="#new" onclick="hidden_nav_mobile()"> News </a>
+        <a href="#blog" onclick="hidden_nav_mobile()"> Blog </a>
+        <a href="#contact" onclick="hidden_nav_mobile()"> Contacts </a>
+      </div>
+    </nav>
+    <!-- Page Content -->
+    <div class="main">
+      <div class="wrapper-container">
+        <section class="header-logo">
+          <img src="./assets/img/logo.png" alt="logo" />
+        </section>
+        <section class="block-content-center">
+          <p>Lorem ipsum dolor sit asmet?</p>
+          <span
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            tristique consequat placerat. Vestibulum auctor pellentesque sem, eu
+            posuere erat hendrerit quis. Maecenas vel consequat turpis. Nam
+            facilisis, ligula in mattis sodales, augue justo tristique nulla,
+            sed lacinia ante eros ut mi. Morbi vitae diam augue. Aliquam vel
+            mauris a nibh auctor commodo. Praesent et nisi eu justo eleifend
+            convallis. Quisque suscipit maximus vestibulum. Phasellus congue
+            mollis orci, sit amet luctus augue tristique eu. Donec vulputate
+            odio neque, sed semper turpis pellentesque a.</span
+          >
+        </section>
+        <section class="block-grid">
+          <div class="css-block">
+            <p class="title">Lorem ipsum dolor sit amet</p>
+            <div class="image-box">
+              <img
+                src="./assets/img/css.png"
+                alt="css"
+                width="128px"
+                height="128px"
+              />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+                dui sodales, faucibus libero ut, posuere felis. Donec imperdiet
+                suscipit accumsan. Aenean consequat condimentum velit ut tempor.
+                Nam porta massa in metus bibendum congue. Pellentesque ultrices
+                liquam egestas nunc at
+              </p>
+            </div>
+            <p>
+              ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est
+              ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam
+              porta massa in metus bibendum congue. Pellentesque ultrices
+              vestibulum mattis.
+            </p>
+          </div>
+          <div class="html-block">
+            <p class="title">Lorem ipsum dolor sit amet</p>
+            <div class="image-box">
+              <img
+                src="./assets/img/html.png"
+                alt="html"
+                width="128px"
+                height="128px"
+              />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+                dui sodales, faucibus libero ut, posuere felis. Donec imperdiet
+                suscipit accumsan. Aenean consequat condimentum velit ut tempor.
+                Nam porta massa in metus bibendum congue. Pellentesque ultrices
+                liquam egestas nunc at
+              </p>
+            </div>
+            <p>
+              ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est
+              ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam
+              porta massa in metus bibendum congue. Pellentesque ultrices
+              vestibulum mattis.
+            </p>
+          </div>
+          <div class="url-block">
+            <p class="title">Lorem ipsum dolor sit amet</p>
+            <div class="image-box">
+              <img
+                src="./assets/img/url.png"
+                alt="url"
+                width="128px"
+                height="128px"
+              />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+                dui sodales, faucibus libero ut, posuere felis. Donec imperdiet
+                suscipit accumsan. Aenean consequat condimentum velit ut tempor.
+                Nam porta massa in metus bibendum congue. Pellentesque ultrices
+                liquam egestas nunc at
+              </p>
+            </div>
+            <p>
+              ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est
+              ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam
+              porta massa in metus bibendum congue. Pellentesque ultrices
+              vestibulum mattis.
+            </p>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <div class="footer">
+          <p>Copyright © 2021</p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      function hidden_nav_mobile() {
+        document.querySelector("input[type='checkbox']").checked = false;
+      }
+    </script>
+  </body>
+</html>
